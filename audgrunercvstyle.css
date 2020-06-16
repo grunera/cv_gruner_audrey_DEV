@@ -29,7 +29,7 @@
 /* Eléments par défaut pour tout le bloc page*/
 body
 {
-    background-color:none;
+    background-color:white;
     background-size: cover;
     width: 900px;
     font-family: 'oxygenregular', 'Trebuchet MS', Arial, Verdana, sans-serif;
@@ -49,7 +49,8 @@ body
     
 }
 
-/* Header */
+/* HEADER */
+
 header
 {
     display: flex;
@@ -85,21 +86,19 @@ header
     border-radius:50%;
     border: 5px solid rgba( 129, 105, 22, 0.3);
     margin-top:40px;
-   
 }
 
-.titre_principal: nth-child(1)
+.titre_principal:nth-child(1)
 {
     order:2;
 }
-.photo_audrey: nth-child(2)
+.photo_audrey:nth-child(2)
 {
     order:1;
 }
 
 header h1
 {
-    
     font-size: 3.2em ;
     font-weight: lighter;
     font-style: normal;
@@ -107,17 +106,15 @@ header h1
     text-transform: uppercase;
     margin-bottom:0;
     padding-bottom:0;
-   
 }
 
 header h1+p
 {
     font-weight: bold;
-    color: rgb(85,85,85);
+    color: rgb( 85, 85, 85);
     font-size:1.6em;
     margin-top:0;
     padding-top:0;
-  
 }
 
 .name
@@ -132,7 +129,7 @@ header h1+p
   margin-top:1px;
 }
 
-/*Main*/
+/*MAIN*/
 
 main
 { 
@@ -140,9 +137,9 @@ main
     flex-direction: row;
     justify-content:space-between;
     flex-wrap:nowrap;
- }
+}
 
-/*Aside*/
+/*ASIDE*/
 
 aside 
 {
@@ -157,7 +154,6 @@ aside
     margin:0;
     padding:0;
 }
-
 
 #contact
 {
@@ -202,17 +198,15 @@ address p
     margin-top:40px;
 }
 
-a{
+a
+{
     color: black;
     text-decoration: underline;
-        }
-
-a:hover{
-    color: white;
-
 }
-a:visited {
-  color: black;
+
+a:hover
+{
+    color: white;
 }
 
 aside p
@@ -225,15 +219,15 @@ aside p
     padding-top:40px;
 }
 
-#loisirs_icone {
+#loisirs_icone 
+{
     display:flex;
     align-items: center;
     justify-content: space-around;
     text-align: center;
     padding-right: 25px;
     padding-left: 25px;
-    
- }
+}
 
 aside i
 {   border: 1px solid rgb(64,64,64);
@@ -243,10 +237,9 @@ aside i
     border-radius: 50%;
     font-size: 2.7em;
     padding-top:5px;
-    
 }
     
-/*Section*/
+/*SECTION*/
 
 section
 {
@@ -254,21 +247,21 @@ section
     padding:0;
     display:flex;
     flex-direction:column;
-    
 }
 
 .title
-{ font-size: 1.3em;
-  font-weight: bold;
-  color: black;
-  height:50px;
-  border-bottom: 1px solid rgb(254,202,7);
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  justify-content: flex-start;
-  margin-left:43px;
-  margin-right:20px;
+{ 
+    font-size: 1.3em;
+    font-weight: bold;
+    color: black;
+    height:50px;
+    border-bottom: 1px solid rgb(254,202,7);
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: flex-start;
+    margin-left:43px;
+    margin-right:20px;
 }
 
 .icone_title
@@ -276,15 +269,21 @@ section
    margin-right: 40px;
 }
 
+section i
+{
+    color: rgb(254,202,7);
+    font-size: 1.2em;
+    padding-top:2px;
+}
 
 .contenu_rubriques
 { 
-margin-top: 20px;
-margin-right:20px;
-margin-left:43px; 
-display:flex;
-flex-direction: row;
-justify-content: space-between;
+    margin-top: 20px;
+    margin-right:20px;
+    margin-left:43px; 
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .dateetlieu
@@ -294,6 +293,7 @@ justify-content: space-between;
     padding-top:0;
     margin-left:10px; 
 }
+
 p span
 { 
     font-weight: bold;
@@ -302,14 +302,14 @@ p span
     padding-top:2px;
     padding-bottom:10px;
     height:10px;
-
 }
+
 .contenu_rubriques_anddotcircle
-{   display:flex;
+{   
+    display:flex;
     flex-direction:row;
     margin-bottom:10px;
 }
-
 
 .contenu_rubriques_circle
 {   
@@ -326,38 +326,46 @@ p span
     padding-right:20px;
     text-align: justify;
 }
+
 .texth4 p
 {
     margin-top: 0px;
+    font-size: 0.8em;
+    font-weight: lighter;
     text-align:justify;
-  
 }
 
 article h4
 { 
   margin-top:0;
   margin-bottom:0;
-  padding-top:0; 
+  padding-top:0;
+  color: rgb( 26, 26, 26); 
 }
-
 
 section h4
 { 
     margin-bottom:0;
  }
 
-
-section i
+section h5
 {
-    color: rgb(254,202,7);
-    font-size: 1.2em;
-    padding-top:2px;
+  color: rgb( 26, 26, 26);
+}
 
+.contenu_rubriques_anddotcircle i
+{ 
+    font-size: 1.2em;
+    padding-bottom:20px;
+    margin-bottom:10px;
+    padding-right:0px;
+    margin-right:0px;
 }
 
 .contenu_rubriques_circle i
 { 
     font-size: 0.8em; 
+    padding-top:3px;
 }
 
 #recotext
@@ -369,6 +377,11 @@ section i
     margin-right:30px;
 }
 
+#reco2
+{
+    margin-right:20px;
+}
+
 h5
 {
     font-size:1.0em;
@@ -376,117 +389,307 @@ h5
 }
 
 .texth5 
-{ font-size:0.9em; 
+{ 
+  font-size:0.9em; 
 }
 
-/* REGLES FORMAT RESPONSIVE MAX-WIDTH 1024PX I PAD */
+/* REGLES FORMAT RESPONSIVE MAX-WIDTH 1000PX (inclus mobiles Galaxy Samsung 360px, IPhone 6 375px,
+ I Pad 768px - I PAD PRO 1024PX NON INCLUS CAR IDEM DESKTOP*/
+
 
 @media all and (max-width: 1000px)
 {
-  body
-  {
-    background-color: white;
-    font-size: 1.6em;
-    margin:8px;
-   }
-  #bloc_page
-  {
-    max-width: auto;
-    border: none;
-    margin-top: 0;
-    margin-right:0;
-    margin-left:0;
-  }
-/*HEADER*/
-  header
-  {
-    width: auto;
-    margin-left: 0;
-    padding-left:0;
-    margin-top:40px;
-    flex-direction: column;
-    align-items: stretch;
-   }
- #titre_principal
-   {
-    margin-bottom:100px;
-    height:150px;
-   }
-#photo_audrey
-{   
-    margin-top:100px;
-    padding-top:10px;
-    padding-bottom:20px;
-    height:500px;
-}
-#photo_audrey img
-{   
-   width: 50%
-     
-    border-radius:50%;
+      body
+      {
+        background-color: white;
+        font-size: 1.6em;
+        margin:0px;
+      }
+
+      #bloc_page
+      {
+          border:none;
+          margin-top: 0px;
+          margin-right: 0px;
+          margin-left: 0px;
+      }
+
+
+      /*HEADER*/
+
+      header
+      {
+          width: auto;
+          margin-left: 0;
+          padding-left:0;
+          margin-top:40px;
+          flex-direction: column;
+          align-items: stretch;
+      }
+
+      #photo_audrey:nth-child(1)
+        {
+          order: 2;
+          width: auto;
+          padding-bottom: 10px;
+        }
+
+      #titre_principal:nth-child(2)
+        {
+          order: 1;
+          width: auto;
+          margin: 0px;
+          padding-bottom: 0px;
+          padding-top: 10px;
+          text-align: center;
+        }
+
+      #titre_principal
+      {
+          margin-bottom:400px;
+          height:150px;
+
+      }
+
+      header h1
+      {
+        text-align: center;
+        font-size:4em;
+        margin-left:100px;
+        margin-right:100px;
+        margin-top:120px;
+        padding:0px;
+      }
+
+
+      .montitre
+      {
+        text-align: center;
+        font-size: 1.85em;
+        font-weight: bold;
+        color: black;
+        padding-right:50px;
+        margin-top:50px;
+        padding-bottom:0px;
+        margin-bottom:0px;
+      }
+
+
+      .border
+      { border-bottom: 1.5px solid rgb(254,202,7); 
+        margin-top:0px;
+        padding-top:0px;
+      }
+
+
+      #photo_audrey
+      {   
+          margin-top:435px;
+          padding-top:20px;
+          padding-bottom:20px;
+          height:500px;
+      }
+
+      #photo_audrey img
+      {   
+         width: 380px;
+         height: 380px;
+         border: 9px solid rgba( 129, 105, 22, 0.4);
+      }
+
+      header h1+p
+       {
+          font-size: 3.5em;
+       }
+
+
+      h2
+       {
+          font-size: 1.3em;
+          height: auto;
+       }
+
+      /*MAIN */
+
+      main
+      { display: flex;
+        flex-direction: column; 
+        width: auto;
+      }
+
+      aside:nth-child(1)
+      { order: 2;
+        width: auto;
+        text-align: center; }
+
+      section:nth-child(2)
+      { 
+        order: 1;
+        width: auto; }
+
+      /*SECTION */
+
+      .title
+      {
+        text-align: center; 
+        margin-top:0px;
+        margin-left:0px;
+        height:90px;
+      }
+
+      .icone_title
+      { 
+        text-align:right;
+        margin-left:230px; 
+        margin-right:0px
+      }
+
+      article
+      { width: auto; 
+      }
+
+      section h3
+      { 
+        margin-left:45px;
+        font-weight:bold;
+        font-size:1.1em;
+        width:800px;
+        text-align:left;
+      }
+
+      .contenu_rubriques_circle i
+      { 
+         padding-top:10px;
+      }
+
+      .dateetlieu
+      {
+        margin-left:40px;
+        font-weight:bold;
+        color:black;
+        text-align: left;
+        width:200px;
+      }
+
+      .contenu_rubriques
+      {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top:50px;
+      }
+
+      .texte_contenu_rubrique
+      { 
+        text-align: justify;
+        margin-right:30px;
+        margin-left:0px;
+        width:800px;
+      }
+
+      #reco1
+      { 
+        width:400px; 
+      }
+
+      /*ASIDE */
+
+      aside
+      { 
+        display: flex;
+        flex-direction: column; 
+        text-align: left;
+        justify-content: flex-start;
+        height:1400px;
+      }
+
+
+
+      #contact:nth-child(1)
+      { order: 3;
+        width: 900px;
+        height:600px;
+        margin-top:80px;
+      }
+
+      #Apropos:nth-child(2)
+      { 
+        order: 1;
+        width: auto;
+        height:auto; }
+
+      #loisirs:nth-child(3)
+      {
+        order: 2;
+        margin-top:0px;
+      }
+
+      address
+      {
+        margin-left:43px;
+      }
+
+      address p
+      {
+        color:rgb( 27, 27, 27);
+        font-weight: bold;
+        margin-top:20px;
+        padding-top:150px;
+      }
+
+      a
+      {
+        color: rgb( 27, 27, 27);
+      }
+
+      aside p
+      {
+        margin-left: 43px;
+        padding-right: 40px;
+        margin-top:10px;
+        padding-top:0px;
+      }
+
+      aside h2
+      {
+        margin-top:0px;
+        margin-bottom:0px;
+      }
+
+
+      #contact p
+      { 
+          padding-top:20px;
+          margin-bottom:0px;
+          margin-top:10px;
+          text-align: center;
+      }
+
+      #loisirs h2
+      {
+        margin-bottom: 35px;
+      }
+
+
+      #Apropos p
+      {
+        padding-top:0px;
+        margin-bottom:20px;
+        margin-top:30px;
+      }
+
+      aside i
+      {   border: 1px solid rgb(64,64,64);
+          width: 85px;
+          height: 80px;
+          text-align: center;
+          border-radius: 50%;
+          font-size: 2.7em;
+          padding-top:5px;
+      }
 
 }
-a
-{ 
-    height: 250px;
-
-     }
 
 
-  header h1:
-  {
-    font-size: 4.5em;
-    display:flex;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  header h1+p:
-  {
-    font-size: 3.5em;
-  }
-
-
-  h2
-  {
-    font-size: 1.3em;
-    height: auto;
-  }
-
-#photo_audrey:nth-child(1)
-  {
-    order: 2;
-    width: auto;
-    padding-bottom: 10px;
-  }
-
-#titre_principal:nth-child(2)
-  {
-    order: 1;
-    width: auto;
-    margin: 0px;
-    padding-bottom: 0px;
-    padding-top: 10px;
-    text-align: center;
-  }
-
-main
-{ display: flex;
-  flex-direction: column; 
-  width: auto;
-}
-
-aside:nth-child(1)
-{ order: 2;
-  width: auto;
-  text-align: center; }
-
-section:nth-child(2)
-{ order: 1;
-width: auto; }
-
-article
-{ width: auto; 
-}
 
  
