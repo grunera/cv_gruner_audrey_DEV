@@ -1,3 +1,4 @@
+
 /* éléments principaux de la page */
 
 @font-face {
@@ -88,15 +89,6 @@ header
     margin-top:40px;
 }
 
-.titre_principal:nth-child(1)
-{
-    order:2;
-}
-.photo_audrey:nth-child(2)
-{
-    order:1;
-}
-
 header h1
 {
     font-size: 3.2em ;
@@ -136,6 +128,7 @@ main
     display:flex;
     flex-direction: row;
     justify-content:space-between;
+
     flex-wrap:nowrap;
 }
 
@@ -343,11 +336,6 @@ article h4
   color: rgb( 26, 26, 26); 
 }
 
-section h4
-{ 
-    margin-bottom:0;
- }
-
 section h5
 {
   color: rgb( 26, 26, 26);
@@ -503,11 +491,6 @@ h5
        }
 
 
-      h2
-       {
-          font-size: 1.3em;
-          height: auto;
-       }
 
       /*MAIN */
 
@@ -654,6 +637,7 @@ h5
       {
         margin-top:0px;
         margin-bottom:0px;
+        font-size:1.5em;
       }
 
 
